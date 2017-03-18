@@ -2,26 +2,32 @@
 
 Paanet organization's website.
 
-* Ruby version
+## Requirements
+
+Ruby version
 
  - 2.3.3
 
-* System dependencies
+System dependencies
 
- - DevKit
+ - DevKit for Windows
 
-* Configuration
+## Configuration
 
-Basic per now.
-
-* Database creation
+Database creation
 
  - PostgreSQL 9.6
 
-* Database initialization
+## Setup
 
-TODO.
+Install dependencies
 
-* Deployment instructions
+    ./bin/bundle Install
+    
+Get it running
 
-Will use heroku.
+    ./bin/rails server
+
+## TODO.
+
+Deployment instructions. Will use heroku.
