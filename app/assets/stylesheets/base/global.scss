@@ -1,0 +1,27 @@
+@import "mixins";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+
+  background: url('slide_1.jpg') no-repeat 50% 0%;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+
+  transition: background-image 1s;
+}
+
+
+.navbar.navbar-default {
+  background-color: transparent;
+  border: none;
+
+  .navbar-brand {
+    color: pannet-color('primary');
+  }
+
+  .navbar-nav > li > a {
+    color: pannet-color('background');
+    text-shadow: 1px 1px 6px black;
+  }
+}
