@@ -1,0 +1,11 @@
+$pannet-colors: (
+  'primary': #11d3eb,
+  'accent': #212e46,
+  'secondary': #36b69e,
+  'foreground': #191919,
+  'background': #ffffff
+);
+
+@function pannet-color($key: 'primary') {
+  @return map-get($pannet-colors, $key);
+}
