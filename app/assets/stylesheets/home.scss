@@ -5,10 +5,17 @@
   flex-direction: column;
   align-items: center;
 
-  h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+
+  &__title {
     margin-bottom: 0;
 
     font-family: 'Cookie', cursive;
     font-size: 112px;
+  }
+
+  &__motto {
+    text-transform: uppercase;
   }
 }
