@@ -18,7 +18,11 @@
   }
 
   &__motto {
+    margin: 0;
+    width: 300px;
+
     font-weight: bold;
+    text-align: center;
     text-transform: uppercase;
   }
 }
