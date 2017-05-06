@@ -15,4 +15,9 @@
  */
 body {
   font-family: 'Open Sans', sans-serif;
+
+  background: url('slide_1.jpg') no-repeat 50% 0%;
+  background-size: 100%;
+
+  transition: background-image 1s;
 }

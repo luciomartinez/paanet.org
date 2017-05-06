@@ -14,3 +14,18 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).ready(function() {
+  const backgrounds = [
+    'url("/assets/slide_1.jpg")',
+    'url("/assets/slide_2.jpg")',
+    'url("/assets/slide_3.jpg")'
+  ];
+  let current = 0;
+
+  setInterval(() => {
+    if (current === backgrounds.length) {
+      current = -1;
+    }
+    $('body').css('background-image', backgrounds[ ++current ]);
+  }, 10000);
+});
