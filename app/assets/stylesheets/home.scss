@@ -1,5 +1,14 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
+#home-tile {
+  background: url('slide_1.jpg') no-repeat 50% 0%;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+
+  transition: background-image 1s;
+}
+
 .presentation {
   display: flex;
   flex-direction: column;
