@@ -16,5 +16,13 @@ body {
   .navbar-nav > li > a {
     color: pannet-color('background');
     text-shadow: 1px 1px 6px black;
+    text-transform: capitalize;
+  }
+
+  .navbar-collapse {
+    &.collapsing,
+    &.in {
+      background-color: pannet-color('accent');
+    }
   }
 }
