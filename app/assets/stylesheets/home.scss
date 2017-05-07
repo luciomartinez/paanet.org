@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
 
-  background: url('slide_1.jpg') no-repeat 50% 0%;
+  background: image-url("slide_1.jpg") no-repeat 50% 0%;
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -21,19 +21,15 @@
     margin: 0;
 
     font-family: 'Cookie', cursive;
-    font-size: 112px;
+    font-size: 142px;
   }
 
   &__motto {
-    margin: 0;
-    width: 300px;
+    margin: 0 auto;
+    width: 320px;
 
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
   }
-}
-
-.section-content {
-  margin-top: 40px;
 }

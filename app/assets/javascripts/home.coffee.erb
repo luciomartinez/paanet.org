@@ -3,9 +3,9 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $ ->
   backgrounds = [
-    'url("/assets/slide_1.jpg")',
-    'url("/assets/slide_2.jpg")',
-    'url("/assets/slide_3.jpg")'
+    'url("<%= asset_path('slide_1.jpg') %>")',
+    'url("<%= asset_path('slide_2.jpg') %>")',
+    'url("<%= asset_path('slide_3.jpg') %>")'
   ]
   current = 0
 

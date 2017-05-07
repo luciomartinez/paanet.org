@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 
 
@@ -19,10 +20,48 @@ body {
     text-transform: capitalize;
   }
 
+  .navbar-toggle {
+    background-color: pannet-color('background');
+  }
   .navbar-collapse {
     &.collapsing,
     &.in {
       background-color: pannet-color('accent');
     }
+  }
+}
+
+
+.section-content {
+  padding: 40px;
+}
+
+
+.site-footer {
+  padding-top: 25px;
+  height: 300px;
+
+  background-color: pannet-color('accent');
+  color: pannet-color('background');
+
+  .social-networks {
+    &__list {
+      list-style: none;
+      padding: 0;
+
+      &__item {
+        display: inline-block;
+
+        img {
+          margin-right: 3px;
+          height: 35px;
+          width: 35px;
+        }
+      }
+    }
+  }
+
+  .paanet-logo {
+    padding-top: 50px;
   }
 }
