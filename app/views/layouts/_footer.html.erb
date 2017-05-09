@@ -1,27 +1,27 @@
 <footer class="site-footer container-fluid">
   <div class="row">
     <section class="col-md-4 col-sm-4 col-xs-12 text-center">
-      <div class="social-networks">
+      <div class="site-footer__social-networks">
         <p class="sr-only">Redes sociales</p>
-        <ul class="social-networks__list">
-          <li class="social-networks__list__item">
+        <ul class="site-footer__social-networks__list">
+          <li class="site-footer__social-networks__list__item">
             <%= link_to "https://facebook.com/Paanet", rel: "external" do %>
               <%= image_tag "icons/facebook.png", alt: "facebook" %>
             <% end %>
           </li>
-          <li class="social-networks__list__item">
+          <li class="site-footer__social-networks__list__item">
             <%= link_to "https://twitter.com/Paanet", rel: "external" do %>
               <%= image_tag "icons/twitter.png", alt: "twitter" %>
             <% end %>
           </li>
-          <li class="social-networks__list__item">
+          <li class="site-footer__social-networks__list__item">
             <%= link_to "https://instagram.com/Paanet", rel: "external" do %>
               <%= image_tag "icons/instagram.jpg", alt: "instagram" %>
             <% end %>
           </li>
         </ul>
       </div>
-      <div class="paanet-logo">
+      <div class="site-footer__paanet-logo">
         <%= link_to "/" do %>
           <%= image_tag "logo.jpg", alt: "Paanet logo" %>
         <% end %>
@@ -34,7 +34,7 @@
       </address>
     </div>
     <div class="col-md-4 col-sm-4 col-xs-12 text-center">
-      <p>Somos una red de apoyo, contención y asistencia a niños y adolescentes con cáncer.</p>
+      <p class="site-footer__message">Somos una red de apoyo, contención y asistencia a niños y adolescentes con cáncer.</p>
     </div>
   </div>
 </footer>

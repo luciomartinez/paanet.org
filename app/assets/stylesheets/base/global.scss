@@ -44,7 +44,7 @@ body {
   background-color: pannet-color('accent');
   color: pannet-color('background');
 
-  .social-networks {
+  &__social-networks {
     &__list {
       list-style: none;
       padding: 0;
@@ -61,7 +61,12 @@ body {
     }
   }
 
-  .paanet-logo {
+  &__paanet-logo {
     padding-top: 50px;
+  }
+
+  &__message {
+    margin: 0 auto;
+    width: 300px;
   }
 }
