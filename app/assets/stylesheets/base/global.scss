@@ -1,5 +1,8 @@
 @import "mixins";
 
+//TODO: improve the scope of this
+$footer-height: 200px;
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -34,12 +37,13 @@ body {
 
 .section-content {
   padding: 40px;
+  min-height: calc(100vh - #{$footer-height});
 }
 
 
 .site-footer {
   padding-top: 25px;
-  min-height: 200px;
+  height: $footer-height;
 
   background-color: pannet-color('accent');
   color: pannet-color('background');
