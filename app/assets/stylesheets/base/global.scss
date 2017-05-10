@@ -35,9 +35,12 @@ body {
 }
 
 
-.section-content {
-  padding: 40px;
+#view-content-wrapper {
   min-height: calc(100vh - #{$footer-height});
+}
+
+.view-content {
+  padding: 40px;
 }
 
 
