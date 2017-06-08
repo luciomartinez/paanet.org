@@ -11,30 +11,34 @@
         Puedes acercarte a nuestra organización de 8:30 a 13:00 en Córdoba 2766, Mar del Plata
         o llámanos al <%= link_to "(0223) 495-4515", "tel:0223-495-4515" %> para una comunicación más directa.
       </p>
-      <article>
-        <p>Dejanos un mensaje</p>
-        <form>
-          <div class="form-group">
-            <label for="contactMessage" class="sr-only">Mensaje</label>
-            <textarea id="contactMessage" class="form-control" required placeholder="Sientete libre de escribir..."></textarea>
-          </div>
-          <div class="form-group">
-            <label for="contactTitle" class="sr-only">Titulo</label>
-            <input id="contactTitle" class="form-control" placeholder="Piensa un título">
-          </div>
-          <div class="form-group">
-            <label for="contactEmail" class="sr-only">Email</label>
-            <input id="contactEmail" class="form-control" placeholder="Email si tienes">
-          </div>
-          <div class="form-group">
-            <label for="contactPhone" class="sr-only">Telefono</label>
-            <input id="contactPhone" class="form-control" placeholder="Un telefono para escribirte o llamarte">
-          </div>
-          <div>
-            <button type="submit" class="btn btn-default">Enviar</button>
-          </div>
-        </form>
-      </article>
+      <% if flash[:result].nil? %>
+        <article>
+          <p>Dejanos un mensaje</p>
+          <%= form_tag({controller: "contact", action: "submit"}, method: :post) do %>
+            <div class="form-group">
+              <%= label_tag "message", "Mensaje", class: "sr-only" %>
+              <%= text_area_tag "message", nil, class: "form-control", required: true, placeholder: "Sientete libre de escribir..." %>
+            </div>
+            <div class="form-group">
+              <%= label_tag "name", "Nombre", class: "sr-only" %>
+              <%= text_field_tag "name", nil, class: "form-control", placeholder: "Tu nombre completo" %>
+            </div>
+            <div class="form-group">
+              <%= label_tag "email", "Email", class: "sr-only" %>
+              <%= text_field_tag "email", nil, class: "form-control", placeholder: "Email si tienes" %>
+            </div>
+            <div class="form-group">
+              <%= label_tag "phone", "Telefono", class: "sr-only" %>
+              <%= text_field_tag "phone", nil, class: "form-control", placeholder: "Un telefono para escribirte o llamarte" %>
+            </div>
+            <div>
+              <%= button_tag "Enviar", class: "btn btn-default" %>
+            </div>
+          <% end %>
+        </article>
+      <% else %>
+        <p><%= flash[:result] %></p>
+      <% end %>
     </div>
   </div>
 </section>
