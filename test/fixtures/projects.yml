@@ -1,0 +1,12 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: Nuestro proyecto principal
+  url: http://somewhere.url/share
+  description: Fue el primero y se realiza cada mes
+  position: 1
+
+two:
+  title: El proyecto moderno
+  description: Considerado moderno por ser el más reciente
+  position: 2
