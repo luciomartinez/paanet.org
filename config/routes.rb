@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'projects/index'
+  match "/nosotros", to: "projects#index", via: 'get'
+
   get 'goals/index'
   match "/objetivos", to: "goals#index", via: 'get'
 
