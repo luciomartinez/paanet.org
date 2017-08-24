@@ -2,7 +2,11 @@
   <div class="row">
     <div class="col-md-6 col-md-offset-3 text-center">
       <h1>Objetivos</h1>
-      <p>Rellename de contenido!</p>
+      <% @goals.each do |goal| %>
+        <div>
+          <p class="<%= 'important' if goal.important %>"><%= goal.body %></p>
+        </div>
+      <% end %>
     </div>
   </div>
 </section>

@@ -14,7 +14,7 @@ when "development"
   ])
 
   Project.create([
-    { position: 1, title: 'Nuestro proyecto', description: 'Primer proyecto de la organización tiene vigencia hoy en día.' },
+    { position: 1, title: 'Nuestro proyecto', url: 'http://facebook.com/paanet.org', description: 'Primer proyecto de la organización tiene vigencia hoy en día.' },
     { position: 2, title: 'Nuevo proyecto', description: 'Último proyecto proveniente de la idea de la nueva integrante de la organización.' }
   ])
 
