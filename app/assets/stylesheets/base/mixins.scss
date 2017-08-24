@@ -9,3 +9,8 @@ $pannet-colors: (
 @function pannet-color($key: 'primary') {
   @return map-get($pannet-colors, $key);
 }
+
+@mixin text-shadow($color, $size) {
+  color: pannet-color($color);
+  text-shadow: 1px 1px $size black;
+}

@@ -1,7 +1,9 @@
+<section id="goals-tile" class="page-cover">
+  <h1 class="page-cover__title">Objetivos</h1>
+</section>
 <section class="view-content container">
   <div class="row">
     <div class="col-md-6 col-md-offset-3 text-center">
-      <h1>Objetivos</h1>
       <% @goals.each do |goal| %>
         <div>
           <p class="<%= 'important' if goal.important %>"><%= goal.body %></p>
