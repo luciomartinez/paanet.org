@@ -3,11 +3,10 @@
 </section>
 <section class="view-content container">
   <div class="row">
-    <div class="col-md-6 col-md-offset-3 text-center">
-      <h1>Proyectos</h1>
+    <div class="col-md-6 col-md-offset-3 project-list">
       <% @projects.each do |project| %>
-        <div>
-          <%= link_to project.title, project.url %>
+        <div class="project-list__item">
+          <%= link_to project.title, project.url, class: 'title' %>
           <p><%= project.description %></p>
         </div>
       <% end %>

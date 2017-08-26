@@ -4,3 +4,20 @@
 #projects-tile {
   background-image: asset-url('slide_2.jpg');
 }
+
+.project-list {
+  &__item {
+    margin-bottom: 20px;
+
+    .title {
+      display: inline-block;
+      margin-bottom: 10px;
+      border-bottom: 2px solid gray;
+      padding-bottom: 5px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
