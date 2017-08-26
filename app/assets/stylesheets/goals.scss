@@ -5,6 +5,14 @@
   background-image: asset-url('slide_3.jpg');
 }
 
-.important {
-  font-weight: bold;
+.goal-list {
+  &__item {
+    &.important {
+      font-style: italic;
+    }
+  }
+
+  &__separator {
+    width: 100%;
+  }
 }

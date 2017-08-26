@@ -3,11 +3,14 @@
 </section>
 <section class="view-content container">
   <div class="row">
-    <div class="col-md-6 col-md-offset-3 text-center">
-      <% @goals.each do |goal| %>
-        <div>
-          <p class="<%= 'important' if goal.important %>"><%= goal.body %></p>
+    <div class="col-md-6 col-md-offset-3 text-center goal-list">
+      <% @goals.each_with_index do |goal, index| %>
+        <div class="goal-list__item <%= 'important' if goal.important %>">
+          <p><%= goal.body %></p>
         </div>
+        <% if index < @goals.length - 1 %>
+          <%= image_tag 'separator.png', class: 'goal-list__separator' %>
+        <% end %>
       <% end %>
     </div>
   </div>
