@@ -18,8 +18,8 @@ body {
   }
 
   .navbar-nav > li > a {
-    @include text-shadow('background', 6px);
     text-transform: capitalize;
+    @include text-shadow('background', 6px);
   }
 
   .navbar-toggle {
@@ -44,6 +44,7 @@ body {
 
 .page-cover {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-size: cover;
@@ -51,10 +52,15 @@ body {
   width: 100%;
 
   &__title {
-    @include text-shadow('background', 2px);
     font-size: 52px;
     font-weight: bold;
     text-align: center;
+    @include text-shadow('background', 2px);
+  }
+  &__sub-title {
+    color: gray;
+    font-style: italic;
+    @include text-shadow('foreground-light', 2px);
   }
 }
 
