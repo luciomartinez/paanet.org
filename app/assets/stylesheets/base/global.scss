@@ -2,6 +2,7 @@
 
 //TODO: improve the scope of this
 $footer-height: 200px;
+$navbar-height: 50px;
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -50,7 +51,9 @@ body {
   align-items: center;
   justify-content: center;
   background-size: cover;
-  height: 100vh;
+
+  margin-top: $navbar-height;
+  height: calc(100vh - #{$navbar-height});
   width: 100%;
 
   &__title {
