@@ -10,16 +10,18 @@ body {
 
 
 .navbar.navbar-default {
-  background-color: transparent;
+  background-color: pannet-color('primary');
   border: none;
 
   .navbar-brand {
-    color: pannet-color('primary');
+    color: pannet-color('accent');
+    font-size: 20px;
+    font-weight: bold;
   }
 
   .navbar-nav > li > a {
+    color: pannet-color('background');
     text-transform: capitalize;
-    @include text-shadow('background', 6px);
   }
 
   .navbar-toggle {
