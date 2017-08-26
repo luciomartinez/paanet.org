@@ -7,6 +7,13 @@ $navbar-height: 50px;
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+
+  > .alert {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: $navbar-height;
+  }
 }
 
 

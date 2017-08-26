@@ -21,9 +21,17 @@
 
   <body>
     <%= render "layouts/navbar" %>
+
+    <% if not notice.blank? %>
+      <p class="alert alert-info"><%= notice %></p>
+    <% elsif not alert.blank? %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+
     <main id="view-content-wrapper">
       <%= yield %>
     </main>
+
     <%= render "layouts/footer" %>
   </body>
 </html>
