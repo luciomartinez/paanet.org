@@ -1,3 +1,3 @@
 class Goal < ApplicationRecord
-  validates :position, uniqueness: true
+  validates :position, :uniqueness => { :message => "posición ya tomada" }
 end
