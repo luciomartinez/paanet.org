@@ -18,16 +18,22 @@ Database creation
 
  - PostgreSQL 9.6
 
-## Setup
+## Local Setup
 
 Install dependencies
 
-    ./bin/bundle Install
+    ./bin/bundle install
     
 Get it running
 
     ./bin/rails server
 
-## TODO.
+## Deploy
 
-Deployment instructions. Will use heroku.
+This repo can be connected into a heroku application for manual or automatic deployment.  
+However some considerations can be done as following.
+
+__Generate default admin__
+
+ 1. Open the console from heroku and enter `rails console`.
+ 2. Create an Active Admin user from the console: `AdminUser.create({ email: 'yours', password: 'yours' });`
