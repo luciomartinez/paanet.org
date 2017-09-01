@@ -1,0 +1,16 @@
+{
+  "short_name": "Paanet",
+  "name": "Paanet organization's website",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/ico",
+      "sizes": "16x16"
+    }
+  ],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#ffffff",
+  "theme_color": "#11d3eb",
+  "display": "browser",
+  "orientation": "portrait"
+}
