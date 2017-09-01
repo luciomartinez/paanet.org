@@ -24,6 +24,10 @@ Install dependencies
 
     ./bin/bundle install
     
+Create DB
+
+    ./bin/rails db:setup db:migrate
+    
 Get it running
 
     ./bin/rails server
@@ -33,7 +37,8 @@ Get it running
 This repo can be connected into a heroku application for manual or automatic deployment.  
 However some considerations can be done as following.
 
-__Generate default admin__
+__Create admin user__
 
  1. Open the console from heroku and enter `rails console`.
- 2. Create an Active Admin user from the console: `AdminUser.create({ email: 'yours', password: 'yours' });`
+ 2. Create an Active Admin user from the console `AdminUser.create({ email: 'yours', password: 'yours' });`
+ 3. Make sure it was saved correctly by running `AdminUser.all` afterwards.
