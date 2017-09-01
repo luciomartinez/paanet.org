@@ -18,27 +18,27 @@ body {
 
 
 .navbar.navbar-default {
-  background-color: pannet-color('primary');
+  background-color: paanet-color('primary');
   border: none;
 
   .navbar-brand {
-    color: pannet-color('accent');
+    color: paanet-color('accent');
     font-size: 20px;
     font-weight: bold;
   }
 
   .navbar-nav > li > a {
-    color: pannet-color('background');
+    color: paanet-color('background');
     text-transform: capitalize;
   }
 
   .navbar-toggle {
-    background-color: pannet-color('background');
+    background-color: paanet-color('background');
   }
   .navbar-collapse {
     &.collapsing,
     &.in {
-      background-color: pannet-color('accent');
+      background-color: paanet-color('accent');
     }
   }
 }
@@ -82,8 +82,8 @@ body {
   padding: 25px;
   min-height: $footer-height;
 
-  background-color: pannet-color('accent');
-  color: pannet-color('background');
+  background-color: paanet-color('accent');
+  color: paanet-color('background');
 
   &__social-networks {
     &__list {
@@ -109,5 +109,9 @@ body {
   &__message {
     margin: 0 auto;
     width: 300px;
+  }
+
+  a {
+    color: paanet-color('primary');
   }
 }

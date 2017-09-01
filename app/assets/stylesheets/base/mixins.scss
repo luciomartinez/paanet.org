@@ -1,4 +1,4 @@
-$pannet-colors: (
+$paanet-colors: (
   'primary': #11d3eb,
   'accent': #212e46,
   'secondary': #36b69e,
@@ -7,11 +7,11 @@ $pannet-colors: (
   'background': #ffffff
 );
 
-@function pannet-color($key: 'primary') {
-  @return map-get($pannet-colors, $key);
+@function paanet-color($key: 'primary') {
+  @return map-get($paanet-colors, $key);
 }
 
 @mixin text-shadow($color, $size) {
-  color: pannet-color($color);
+  color: paanet-color($color);
   text-shadow: 1px 1px $size black;
 }
