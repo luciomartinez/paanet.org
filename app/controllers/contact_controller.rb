@@ -6,7 +6,7 @@ class ContactController < ApplicationController
     ContactMailer.contact_email(params[:name],
       params[:message],
       params[:email],
-      params[:phone]).deliver_later
+      params[:phone]).deliver_now
 
     flash[:result] = 'Mensaje enviado! Ahora estamos en contacto :-)'
 

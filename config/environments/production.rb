@@ -64,12 +64,12 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'paanet.herokuapp.com' }
 
   config.action_mailer.smtp_settings = {
-    :address => 'smtp.gmail.com',
-    :port => 587,
-    :domain => 'paanet.org',
-    :user_name => ENV['SMTP_USERNAME'],
-    :password => ENV['SMTP_PASSWORD'],
-    :authentication => 'plain'
+    address:        'smtp.gmail.com',
+    port:           587,
+    authentication: 'plain',
+    domain:         'paanet.org',
+    user_name:      ENV['SMTP_USERNAME'],
+    password:       ENV['SMTP_PASSWORD']
   }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
