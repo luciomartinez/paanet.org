@@ -63,6 +63,8 @@ body {
   height: calc(100vh - #{$navbar-height});
   width: 100%;
 
+  text-align: center;
+
   &__title {
     font-size: 52px;
     font-weight: bold;
@@ -77,8 +79,8 @@ body {
 }
 
 .site-footer {
-  padding-top: 25px;
-  height: $footer-height;
+  padding: 25px;
+  min-height: $footer-height;
 
   background-color: pannet-color('accent');
   color: pannet-color('background');
