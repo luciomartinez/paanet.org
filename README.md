@@ -22,17 +22,18 @@ Environment variables
 
  - `POSTGRES_USERNAME`: postgres username
  - `POSTGRES_PASSWORD`: postgres password
- 
+ - `CONTACT_EMAIL`: the email address where contact forms should be sent, default 'contacto@paanet.org'
+
 ## Local Setup
 
 Install dependencies
 
     ./bin/bundle install
-    
+
 Create DB
 
     ./bin/rails db:setup db:migrate
-    
+
 Get it running
 
     ./bin/rails server
