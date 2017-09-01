@@ -8,16 +8,21 @@ Ruby version
 
  - 2.3.3
 
+PostgreSQL version
+
+ -  9.6
+
 System dependencies
 
  - DevKit for Windows
 
 ## Configuration
 
-Database creation
+Environment variables
 
- - PostgreSQL 9.6
-
+ - `POSTGRES_USERNAME`: postgres username
+ - `POSTGRES_PASSWORD`: postgres password
+ 
 ## Local Setup
 
 Install dependencies
