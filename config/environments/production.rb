@@ -63,9 +63,10 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: 'paanet.herokuapp.com' }
 
-  # Default from address currently being overwritten by google
+  # NOTE: this value is currently being overwritten by google config below.
+  # Altought is not used, is still required and cannot be blank.
   # see: https://stackoverflow.com/q/20021035/1505348
-  #config.action_mailer.default_options = { from: 'notificaciones@paanet.org' }
+  config.action_mailer.default_options = { from: 'notificaciones@paanet.org' }
 
   config.action_mailer.smtp_settings = {
     address:        'smtp.gmail.com',
