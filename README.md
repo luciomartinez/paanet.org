@@ -25,6 +25,8 @@ Environment variables
  - `CONTACT_EMAIL`: the destination email address of contact forms, default 'contacto@paanet.org'
  - `SMTP_USERNAME`: Google account's address for sending emails, eg. 'paanet@gmail.com'
  - `SMTP_PASSWORD`: Google account's password
+ - `RECAPTCHA_SECRET_KEY`: ReCAPTCHA's value, see https://www.google.com/recaptcha/admin
+ - `RECAPTCHA_SITE_KEY`: ReCAPTCHA's value.
 
 __Email__
 
@@ -47,6 +49,10 @@ https://stackoverflow.com/questions/18124878/netsmtpauthenticationerror-when-sen
 Install dependencies
 
     ./bin/bundle install
+
+Define environment variables
+
+    mv .env.example .env # then edit .env file manually
 
 Create DB
 
