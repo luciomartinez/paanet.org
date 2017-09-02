@@ -3,13 +3,15 @@ class ContactController < ApplicationController
   end
 
   def submit
-    ContactMailer.contact_email(params[:name],
-      params[:message],
-      params[:email],
-      params[:phone]).deliver_now
+    if verify_recaptcha
+      ContactMailer.contact_email(params[:name],
+        params[:message],
+        params[:email],
+        params[:phone]).deliver_now
 
-    flash[:result] = 'Mensaje enviado! Ahora estamos en contacto :-)'
+      flash[:result] = 'Mensaje enviado! Ahora estamos en contacto :-)'
 
-    redirect_to '/contacto'
+      redirect_to '/contacto'
+    end
   end
 end

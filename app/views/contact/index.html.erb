@@ -31,6 +31,9 @@
               <%= label_tag "phone", "Telefono", class: "sr-only" %>
               <%= text_field_tag "phone", nil, class: "form-control", placeholder: "Un telefono para escribirte o llamarte" %>
             </div>
+            <div id="recaptcha-container">
+              <%= recaptcha_tags %>
+            </div>
             <div>
               <%= button_tag "Enviar", class: "btn btn-default" %>
             </div>

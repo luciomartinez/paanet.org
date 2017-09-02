@@ -55,3 +55,5 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'activeadmin', github: 'activeadmin'
 # and its dependencies
 gem 'devise'
+
+gem "recaptcha", require: "recaptcha/rails"
