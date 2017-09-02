@@ -63,8 +63,6 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: 'paanet.herokuapp.com' }
 
-  config.action_mailer.default_options = { from: 'notificaciones@paanet.org' }
-
   config.action_mailer.smtp_settings = {
     address:        'smtp.gmail.com',
     port:           587,
