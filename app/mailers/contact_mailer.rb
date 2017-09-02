@@ -4,8 +4,6 @@ class ContactMailer < ApplicationMailer
     @body = message
     @email = email || 'no disponible'
     @phone = phone || 'no disponible'
-    mail(to: ENV.fetch('CONTACT_EMAIL') { 'contacto@paanet.org' },
-        from: 'notificaciones@paanet.org',
-        subject: 'Contacto Web')
+    mail(to: ENV.fetch('CONTACT_EMAIL') { 'contacto@paanet.org' }, subject: 'Contacto Web')
   end
 end
