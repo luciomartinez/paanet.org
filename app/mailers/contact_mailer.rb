@@ -4,6 +4,6 @@ class ContactMailer < ApplicationMailer
     @body = message
     @email = email
     @phone = phone
-    mail(to: ENV.fetch('CONTACT_EMAIL') { 'contacto@paanet.org' }, subject: 'Pedido de contacto')
+    mail(to: ENV.fetch('CONTACT_EMAIL') { 'contacto@paanet.org' }, subject: 'Contacto Web')
   end
 end
