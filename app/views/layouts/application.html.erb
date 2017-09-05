@@ -6,32 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#11d3eb">
 
-    <% if yield(:title).blank? %>
-      <title>Paanet Org</title>
-      <meta name="og:title" content="Paanet Org">
-    <% else %>
-      <title><%= yield(:title) + " | Paanet Org" %></title>
-      <meta name="og:title" content="<%= yield(:title) + " | Paanet" %>">
-    <% end %>
-    <% if yield(:description).blank? %>
-      <meta name="description" content="Paanet es una red de apoyo,
-      contención y asistencia a niños y adolescentes con cáncer.
-      Situada en la ciudad de Mar del Plata cuenta con distintos programas.">
-      <meta name="og:description" content="Paanet es una red de apoyo,
-      contención y asistencia a niños y adolescentes con cáncer.
-      Situada en la ciudad de Mar del Plata cuenta con distintos programas.">
-    <% else %>
-      <meta name="description" content="<%= yield(:description) %>">
-      <meta name="og:description" content="<%= yield(:description) %>">
-    <% end %>
-    <meta property="og:type" content="website">
-    <% if yield(:url).blank? %>
-      <meta property="og:url" content="https://paanet.org">
-    <% else %>
-      <meta property="og:url" content="<%= "https://paanet.org" + yield(:url) %>">
-    <% end %>
-    <%# Username of Twitter account %>
-    <meta name="twitter:site" content="Paanet">
+    <%= render "layouts/metadata" %>
 
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
