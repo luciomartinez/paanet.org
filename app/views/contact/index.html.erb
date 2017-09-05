@@ -1,6 +1,9 @@
+<% content_for :title, "Contacto" %>
+
 <% content_for :head do %>
   <%= javascript_include_tag 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAzkphKi-nDGzvrHnyPu9fV5X55iPof0I0&callback=initMap', async: true, defer: true %>
 <% end %>
+
 <div id="map"></div>
 <section class="view-content container">
   <div class="row">
