@@ -1,0 +1,5 @@
+es:
+  exception_handler:
+    not_found: |
+      404<br>
+      Lo sentimos, no hemos encontrado lo que has buscado.
