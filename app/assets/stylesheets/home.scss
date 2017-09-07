@@ -8,19 +8,8 @@
 .presentation {
   @include text-shadow('primary', 2px);
 
-  &__title {
-    margin: 0;
-
-    font-family: 'Cookie', cursive;
-    font-size: 142px;
-  }
-
-  &__motto {
+  > img {
     margin: 0 auto;
-    width: 320px;
-
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
+    width: 720px;
   }
 }
