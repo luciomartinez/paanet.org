@@ -3,9 +3,19 @@
   "name": "Paanet organization's website",
   "icons": [
     {
-      "src": "favicon.ico",
-      "type": "image/ico",
-      "sizes": "16x16"
+      "src": "launcher-icon-1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "launcher-icon-2x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "launcher-icon-3x.png",
+      "type": "image/png",
+      "sizes": "192x192"
     }
   ],
   "start_url": "/?utm_source=homescreen",
