@@ -22,9 +22,11 @@ body {
   border: none;
 
   .navbar-brand {
-    color: paanet-color('accent');
-    font-size: 20px;
-    font-weight: bold;
+    padding: 8px 15px;
+
+    > img {
+      width: 90px;
+    }
   }
 
   .navbar-nav > li > a {
@@ -111,6 +113,10 @@ body {
 
   &__paanet-logo {
     padding-top: 50px;
+
+    > img {
+      width: 120px;
+    }
   }
 
   &__message {
