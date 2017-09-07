@@ -59,3 +59,5 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
 
 gem "recaptcha", require: "recaptcha/rails"
+
+gem 'exception_handler'

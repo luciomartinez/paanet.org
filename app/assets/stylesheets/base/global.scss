@@ -48,6 +48,13 @@ body {
   min-height: calc(100vh - #{$footer-height});
 }
 
+// Show exception messages for error pages such as 404
+#view-content-wrapper > .exception {
+  padding: 100px 0px 60px;
+  font-size: 28px;
+  text-align: center;
+}
+
 .view-content {
   padding: 40px;
 }
