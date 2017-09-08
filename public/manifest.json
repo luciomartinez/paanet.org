@@ -20,7 +20,7 @@
   ],
   "start_url": "/?utm_source=homescreen",
   "background_color": "#ffffff",
-  "theme_color": "#11d3eb",
+  "theme_color": "#58bcb0",
   "display": "browser",
   "orientation": "portrait"
 }
