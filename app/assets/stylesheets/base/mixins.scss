@@ -15,3 +15,9 @@ $paanet-colors: (
   color: paanet-color($color);
   text-shadow: 1px 1px $size black;
 }
+
+@mixin media-bp($device) {
+  @if $device == tablet {
+    @media (max-width: 767px) { @content; }
+  }
+}

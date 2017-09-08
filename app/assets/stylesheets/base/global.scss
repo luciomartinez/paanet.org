@@ -94,6 +94,12 @@ body {
   background-color: paanet-color('accent');
   color: paanet-color('background');
 
+  .row > section {
+    @include media-bp(tablet) {
+      padding-bottom: 15px;
+    }
+  }
+
   &__social-networks {
     &__list {
       list-style: none;
@@ -114,6 +120,10 @@ body {
   &__paanet-logo {
     padding-top: 50px;
 
+    @include media-bp(tablet) {
+      padding: 10px 0;
+    }
+
     > img {
       width: 120px;
     }
@@ -121,7 +131,7 @@ body {
 
   &__message {
     margin: 0 auto;
-    width: 300px;
+    max-width: 300px;
   }
 
   a {

@@ -6,10 +6,15 @@
 }
 
 .presentation {
-  @include text-shadow('primary', 2px);
+  width: 100%;
 
   > img {
     margin: 0 auto;
-    width: 720px;
+    width: 50%;
+
+    @include media-bp(tablet) {
+      margin: 0 auto;
+      width: 80%;
+    }
   }
 }
