@@ -1,4 +1,4 @@
-# Paanet.org
+# [Paanet.org](http://www.paanet.org)
 
 Paanet organization's website.
 
@@ -18,15 +18,15 @@ System dependencies
 
 ## Configuration
 
-Environment variables
+Environment variables:
 
  - `POSTGRES_USERNAME`: postgres username
  - `POSTGRES_PASSWORD`: postgres password
+ - `RECAPTCHA_SECRET_KEY`: ReCAPTCHA's value, see https://www.google.com/recaptcha/admin
+ - `RECAPTCHA_SITE_KEY`: ReCAPTCHA's value.
  - `CONTACT_EMAIL`: the destination email address of contact forms, default 'contacto@paanet.org'
  - `SMTP_USERNAME`: Google account's address for sending emails, eg. 'paanet@gmail.com'
  - `SMTP_PASSWORD`: Google account's password
- - `RECAPTCHA_SECRET_KEY`: ReCAPTCHA's value, see https://www.google.com/recaptcha/admin
- - `RECAPTCHA_SITE_KEY`: ReCAPTCHA's value.
 
 __Email__
 
