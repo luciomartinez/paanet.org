@@ -24,7 +24,7 @@ Install dependencies
 
 Define environment variables
 
-    mv .env.example .env # then edit .env file manually
+    cp .env.example .env # Then edit the '.env' file manually.
 
 Create DB
 
