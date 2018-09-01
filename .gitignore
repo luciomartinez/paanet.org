@@ -20,5 +20,8 @@
 # Ignore Byebug command history file.
 .byebug_history
 
+# Ignore IDE config.
+/.idea
+
 # Environment variables
 .env
