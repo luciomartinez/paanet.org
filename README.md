@@ -20,7 +20,11 @@ System dependencies
 
 Install dependencies
 
-    ./bin/bundle install
+    bundle install # Requires sudo password
+    
+Update dependencies when needed
+
+    bundle update # Requires sudo password
 
 Define environment variables
 
@@ -28,18 +32,18 @@ Define environment variables
 
 Create DB
 
-    ./bin/rails db:setup db:migrate
+    bundle exec rails db:setup db:migrate
 
 Get it running
 
-    ./bin/rails server
+    bundle exec rails server
 
 ## Deploy
 
-This repo can be connected into a heroku application for manual or automatic deployment.  
-However some considerations can be done as following.
+This repo can be connected into a Heroku application for manual or automatic deployment.  
+However, it takes some considerations with it.
 
-__Create admin user__
+__Create Admin User__
 
  1. Open the console from heroku and enter `rails console`.
  2. Create an Active Admin user from the console `AdminUser.create({ email: 'yours', password: 'yours' });`
@@ -61,7 +65,7 @@ The _contact_ page offers to the user the capability of sending emails to a cont
 It is important to mention that the email configuration is set with Gmail values.
 Hence a valid Google account is required in order to enable the email service.
 This account might be restricted to connect with the application for security reasons.
-If emails aren't being send then try granting the following two access:
+If emails are not being send then try granting the following two access:
 
  - https://accounts.google.com/DisplayUnlockCaptcha
  - https://myaccount.google.com/lesssecureapps
