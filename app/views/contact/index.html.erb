@@ -1,7 +1,7 @@
 <% content_for :title, "Contacto" %>
 <% content_for :url, "/contacto" %>
-<% content_for :description, "Acercate a Paanet dejandonos un mensaje,
-  contactandonos a traves de internet o deja tu número para que nosotros
+<% content_for :description, "Acercate a Paanet dejándonos un mensaje,
+  contactandonos por aquií o deja tu número para que nosotros
   nos comuniquemos de manera privada y segura contigo." %>
 
 <% content_for :head do %>
@@ -15,16 +15,16 @@
       <h1>Acercate</h1>
       <p>En la organización le damos la bienvenida a todos los chicos</p>
       <p>
-        Puedes acercarte a nuestra organización de 8:30 a 13:00 en Córdoba 2766, Mar del Plata
+        Puedes acercarte a nuestra organización de 8:30 a 13:00 en Córdoba 3325, Mar del Plata
         o llámanos al <%= link_to "(0223) 495-4515", "tel:0223-495-4515" %> para una comunicación más directa.
       </p>
       <% if flash[:result].nil? %>
         <article>
-          <p>Dejanos un mensaje</p>
+          <p>Dejános un mensaje</p>
           <%= form_tag({controller: "contact", action: "submit"}, method: :post) do %>
             <div class="form-group">
               <%= label_tag "message", "Mensaje", class: "sr-only" %>
-              <%= text_area_tag "message", nil, class: "form-control", required: true, placeholder: "Sientete libre de escribir..." %>
+              <%= text_area_tag "message", nil, class: "form-control", required: true, placeholder: "Siéntete libre de escribir..." %>
             </div>
             <div class="form-group">
               <%= label_tag "name", "Nombre", class: "sr-only" %>
@@ -35,8 +35,8 @@
               <%= text_field_tag "email", nil, class: "form-control", placeholder: "Email si tienes" %>
             </div>
             <div class="form-group">
-              <%= label_tag "phone", "Telefono", class: "sr-only" %>
-              <%= text_field_tag "phone", nil, class: "form-control", placeholder: "Un telefono para escribirte o llamarte" %>
+              <%= label_tag "phone", "Teléfono", class: "sr-only" %>
+              <%= text_field_tag "phone", nil, class: "form-control", placeholder: "Un teléfono para escribirte o llamarte" %>
             </div>
             <div id="recaptcha-container">
               <%= recaptcha_tags %>
