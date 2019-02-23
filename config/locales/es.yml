@@ -3,3 +3,6 @@ es:
     not_found: |
       404<br>
       Lo sentimos, no hemos encontrado lo que has buscado.
+    internal_server: |
+        500<br>
+        Lo sentimos, el servidor ha fallado. Por favor, vuelve a intentarlo nuevamente.
