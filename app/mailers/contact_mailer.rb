@@ -1,9 +1,9 @@
 class ContactMailer < ApplicationMailer
   def contact_email(name, message, email, phone)
-    @name = name || 'anonimo'
+    @name = unless name.blank? then name else 'anonimo' end
     @body = message
-    @email = email || 'no disponible'
-    @phone = phone || 'no disponible'
-    mail(to: ENV.fetch('CONTACT_EMAIL') { 'contacto@paanet.org' }, subject: 'Contacto Web')
+    @email = unless email.blank? then email else 'no disponible' end
+    @phone = unless phone.blank? then phone else 'no disponible' end
+    mail(to: ENV.fetch('CONTACT_EMAIL') { 'contacto@paanet.org' }, subject: 'Paanet Contacto Web')
   end
 end
