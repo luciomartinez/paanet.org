@@ -1,9 +1,4 @@
-// Place all the styles related to the Home controller here.
-// They will automatically be included in application.css.
-#home-tile {
-  background-image: image-url("slide_1.jpg") no-repeat 50% 0%;
-  transition: background-image 1s;
-}
+@import "base/*";
 
 .presentation {
   width: 100%;

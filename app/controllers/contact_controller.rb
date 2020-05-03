@@ -9,7 +9,7 @@ class ContactController < ApplicationController
         params[:email],
         params[:phone]).deliver_now
 
-      flash[:result] = 'Mensaje enviado! Ahora estamos en contacto :-)'
+      flash[:result] = '¡Tu mensaje ha sido enviado!'
 
       redirect_to '/contacto'
     end
