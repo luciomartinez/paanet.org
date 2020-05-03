@@ -6,11 +6,11 @@ Paanet organization's website.
 
 Ruby version
 
- - 2.3.3
+ - 2.3.3 or higher
 
 PostgreSQL version
 
- -  9.6
+ -  9.6 or higher
 
 System dependencies
 
