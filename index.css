@@ -1,0 +1,92 @@
+:root {
+  --color-primary-foreground: #232f46;
+  --color-primary-background: #ffffff;
+  --color-inverted-foreground: #ffffff;
+  --color-inverted-background: #232f46;
+  --color-highlight: #58bcb0;
+  --color-highlight-hover: #3db39b;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.link {
+  color: var(--color-highlight);
+}
+
+.link:hover {
+  color: var(--color-highlight-hover);
+}
+
+/* Light/Dark themes */
+
+.primary {
+  background: var(--color-primary-background);
+  color: var(--color-primary-foreground);
+}
+
+.inverted {
+  background: var(--color-inverted-background);
+  color: var(--color-inverted-foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+  .primary {
+    background: var(--color-inverted-background);
+    color: var(--color-inverted-foreground);
+  }
+  
+  .inverted {
+    background: var(--color-primary-background);
+    color: var(--color-primary-foreground);
+  }
+}
+
+/* Homepage specs */
+
+.container {
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.body {
+  padding-top: 3rem;
+}
+
+.banner {
+  width: 20rem;
+  height: 9rem;
+}
+
+.contact {
+  margin: 2.5rem 0;
+}
+
+.contact.facebook {
+  margin: 2rem 0;
+}
+
+.contact > header {
+  font-size: 3rem;
+}
+
+.contact > header > img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.contact.facebook > a > img {
+  width: 16rem;
+  height: 2.5rem;
+}
+
+.footer {
+  padding: 3rem 0;
+}
